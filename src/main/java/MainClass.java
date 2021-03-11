@@ -41,6 +41,27 @@ public class MainClass {
 		{
 			System.out.println(Y);
 		});
+
+		System.out.println("Salary lessthan 30k");
+List l1=	c.stream().filter((s)->s.Esalary<=30000).collect(Collectors.toList());
+		
+		l1.forEach((Q)->
+		{
+			System.out.println(Q);
+		});
+		System.out.println("Edesignation starts with A");
+		
+List l2=	c.stream().filter((m)->m.Edesignation.startsWith("A")).collect(Collectors.toList());
+		
+		l2.forEach((r)->
+		{
+			System.out.println(r);
+		});
+		
+
+		
+		
+		
 		con.close();		
 			}	
 		} catch (SQLException e1) {
