@@ -32,6 +32,7 @@ public class MainClass {
 			
 			
 			
+			
 			System.out.println("age greaterthan 25");
 		List l=	c.stream().filter((x)->x.Age<=30).collect(Collectors.toList());
 		
